@@ -16,7 +16,7 @@
 
         html,
         body {
-            height: 100%;
+            height: 100vh;
         }
 
         body {
@@ -80,7 +80,7 @@
             position: relative;
             /* top: 0px; */
             padding-top: 75px;
-            padding-bottom: 75px;
+            /* padding-bottom: 5x; */
         }
 
         section {
@@ -91,8 +91,9 @@
             grid-area: footer;
             color: #ffffff;
             background-color: #222222;
-            height: 70px;
-            padding: 30px;
+            height: 60px;
+            padding: 25px;
+            font-size: 12px;
         }
 
         .content-overflow {
