@@ -125,6 +125,7 @@
             font-size: 12px;
         }
 
+/*
         .content-overflow {
             left: 50%;
             margin-left: -50vw;
@@ -134,7 +135,7 @@
             box-sizing: border-box;
             position: relative;
         }
-
+*/
         .profile-img {
             /*half the width*/
             margin-left: -75px;
