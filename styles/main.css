@@ -48,9 +48,12 @@
             header {
                 grid-area: header;
                 height: 300px;
-                position: absolute;
-                /* top: 0px; */
-
+                /* position: absolute;
+                top: 0px; */
+                position: relative;
+                background-position: center top;
+                    
+                    
                 background-image: url('../images/bulb-2.jpg');
 
                 /* background-repeat: no-repeat;
@@ -81,7 +84,7 @@
                 -webkit-filter: grayscale(10%);
                 filter: grayscale(10%);
             }
-        /* } */
+       
 
         @media screen and (min-width: 760px) {
             header {
