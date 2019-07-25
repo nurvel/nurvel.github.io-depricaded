@@ -4,15 +4,13 @@
 }
 
 
-
-/* The actual timeline (the vertical ruler) */
+/* vertical line */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
   position: absolute;
@@ -24,7 +22,7 @@
   margin-left: -3px;
 }
 
-/* Container around content */
+/* content container */
 .container {
   padding: 0px 40px;
   position: relative;
@@ -32,13 +30,36 @@
   width: 50%;
 }
 
+/*content to right side*/
+.container:nth-child(even) {
+  left: 50%;
+}
+
+/* born & present containers */
+.container:first-child,
+.container:last-child{
+    left: 25% !important;
+	 text-align: center;
+   z-index: 1;
+   bottom: 50px;
+}
+
+.container:first-child{
+ bottom: 50px;
+}
+.container:last-child{
+  top: 10px;
+  background-color: #F5F5F5;
+ }
+
+ .container:first-child::after,
+ .container:last-child::after,
+ .container:first-child::before,
+ .container:last-child::before{
+   visibility: hidden;
+ }
+
 /*horizontal lines*/
-
-/*
-.container:nth-child(even)::after {
-.timeline::nth-child(even)::before {
-*/
-
 .container::before {
   content: "";
   width: 40%;
@@ -56,7 +77,7 @@
   left: 60%;
 }
 
-/* circles */
+/* balls */
 .container::after {
   content: '';
   position: absolute;
@@ -70,46 +91,14 @@
   z-index: 1;
 }
 
-/* born & present */
-.container:first-child,
-.container:last-child{
-    left: 25% !important;
-	 text-align: center;
-   z-index: 1;
-   bottom: 50px;
-}
-
-.container:first-child{
- bottom: 50px;
-}
-.container:last-child{
-  top: 50px;
- }
-
- /*hide circles and lines*/
-.container:first-child::after,
-.container:last-child::after,
-.container:first-child::before,
-.container:last-child::before{
-	visibility: hidden;
-}
-
 .container:nth-child(odd) {
      left: 0;
-}
-
-/*content to right side*/
-.container:nth-child(even) {
-     left: 50%;
 }
 
 /* adjust right balls*/
 .container:nth-child(even)::after {
      left: -11px;
 }
-
-
-
 
 /* The actual content */
 .content {
@@ -130,8 +119,7 @@
     left: -60px !important;
 	text-align: left;
 	z-index: 1;
-}
-  
+  }
   
   /* Full-width containers */
   .container {
@@ -141,7 +129,8 @@
   } 
 
   /* Make sure all circles are at the same spot */
-  .container:nth-child(odd)::after, .container:nth-child(even)::after {
+  .container:nth-child(odd)::after,
+  .container:nth-child(even)::after {
   left: 20px;
   }
   
@@ -149,4 +138,19 @@
   .container:nth-child(even) {
   left: 0%;
   }
+
+/*horizontal lines*/
+.container::before {
+  width: 40%;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+}
+
+.container:nth-child(even)::before,
+.container:nth-child(odd)::before {
+  left: 5%;
+}
+
+
 }
