@@ -17,6 +17,7 @@
         html,
         body {
             height: 100vh;
+            min-height: 100vh;
         }
 
         body {
@@ -48,10 +49,10 @@
                 grid-area: header;
                 height: 300px;
                 position: absolute;
-                /* top: 0px; */
-
                 background-image: url('../images/bulb-small.jpg');
 
+                /* top: 0px; */
+                /* position: realtive; */
                 /* background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;  */
@@ -60,17 +61,26 @@
                 left: 0;
                 right: 0;
                 top: 0;
+                z-index: 0;
                 bottom: 0;
                 background-position: 50% 50%; 
+                background-repeat: no-repeat;
+
+                -webkit-background-size: 100%; 
+                -moz-background-size: 100%; 
+                -o-background-size: 100%; 
+                background-size: 100%; 
+                    
                 -webkit-background-size: cover; 
                 -moz-background-size: cover; 
+                -o-background-size: cover;
                 background-size: cover;
 
 
                 -webkit-filter: grayscale(10%);
                 filter: grayscale(10%);
             }
-        /* } */
+       
 
         @media screen and (min-width: 760px) {
             header {
@@ -110,6 +120,7 @@
             padding: 25px;
             font-size: 12px;
         }
+
 
         .content-overflow {
             left: 50%;
