@@ -44,18 +44,12 @@
             font-size: 16px;
         }
 
-        /* @media only screen and (min-width: 768px) { */
+        /* mobile */
             header {
                 grid-area: header;
                 height: 300px;
                 position: absolute;
                 background-image: url('../images/bulb-small.jpg');
-
-                /* top: 0px; */
-                /* position: realtive; */
-                /* background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;  */
 
                 width: 100%;
                 left: 0;
@@ -81,16 +75,14 @@
                 filter: grayscale(10%);
             }
        
-
+        /* desktop */
         @media screen and (min-width: 760px) {
             header {
                 grid-area: header;
                 height: 500px;
                 position: absolute;
-                /* top: 0px; */
 
                 background-image: url('../images/bulb-large.jpg');
-
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover; 
@@ -103,9 +95,7 @@
         main {
             grid-area: main;
             position: relative;
-            /* top: 0px; */
             padding-top: 75px;
-            /* padding-bottom: 5x; */
         }
 
         section {
@@ -127,7 +117,6 @@
             margin-left: -50vw;
             width: 100vw;
             min-width: 100%;
-            /* padding: 0 calc(50vw - 50%); */
             box-sizing: border-box;
             position: relative;
         }

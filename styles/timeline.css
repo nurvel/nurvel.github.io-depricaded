@@ -32,7 +32,31 @@
   width: 50%;
 }
 
-/* The circles on the timeline */
+/*horizontal lines*/
+
+/*
+.container:nth-child(even)::after {
+.timeline::nth-child(even)::before {
+*/
+
+.container::before {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  top: 20px;
+}
+
+.container:nth-child(even)::before {
+  left: 0;
+}
+
+.container:nth-child(odd)::before {
+  left: 60%;
+}
+
+/* circles */
 .container::after {
   content: '';
   position: absolute;
@@ -41,19 +65,32 @@
   right: -7px;
   background-color: #999999;
   border: 2px solid #000000;
-  top: 15px;
+  top: 13px;
   border-radius: 50%;
   z-index: 1;
-  /*top: 30px;*/
 }
 
-.container:first-child, .container:last-child{
+/* born & present */
+.container:first-child,
+.container:last-child{
     left: 25% !important;
 	 text-align: center;
-	 z-index: 1;
+   z-index: 1;
+   bottom: 50px;
 }
 
-.container:first-child::after, .container:last-child::after{
+.container:first-child{
+ bottom: 50px;
+}
+.container:last-child{
+  top: 50px;
+ }
+
+ /*hide circles and lines*/
+.container:first-child::after,
+.container:last-child::after,
+.container:first-child::before,
+.container:last-child::before{
 	visibility: hidden;
 }
 
@@ -61,10 +98,12 @@
      left: 0;
 }
 
+/*content to right side*/
 .container:nth-child(even) {
      left: 50%;
 }
 
+/* adjust right balls*/
 .container:nth-child(even)::after {
      left: -11px;
 }
