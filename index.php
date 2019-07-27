@@ -5,7 +5,9 @@ $pass = $_POST['pass'];
 if($user == "admin"
 && $pass == "admin")
 {
+/* 
 // <?php include_once("index.html"); ?>
+*/
 include_once("index.html")
 
 }
