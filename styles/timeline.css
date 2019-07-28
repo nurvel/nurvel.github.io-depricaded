@@ -4,6 +4,37 @@
 }
 
 
+
+.timeline-headline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  display:inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #F5F5F5;
+}
+
+.timeline-sub-headline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.17em;
+}
+.timeline-description {
+  font-family: 'Work Sans';
+}
+.timeline-year {
+  font-family: 'Oswald', sans-serif;
+  font-size: .90em;
+  font-weight: 300;
+}
+
+.timeline-headline,
+.timeline-sub-headline,
+.timeline-content,
+.timeline-year {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 /* vertical line */
 .timeline {
   position: relative;
@@ -26,32 +57,36 @@
 .content {
   background-color: inherit;
   position: relative;
+  /* border-color: red;
+  border-style: solid; */
 }
-
+/* 
 .content>h1,h2,h3,h4 {
   margin: 2px;
+} */
+@media screen and (min-width: 600px) {
+
+  /* years to oppiside side */
+  .container:nth-child(even) .timeline-year {
+    position: absolute;
+    left: -170px;
+    top: 10px;
+    width: 100px;
+    text-align: right;
+  }
+
+  .container:nth-child(odd) .timeline-year {
+    position: absolute;
+    left: 115%; /*TODO: not aligning nicely when adjusting sceen width*/ 
+    top: 10px;
+    width: 100px;
+    text-align: left;
+  }
 }
 
-/* years to oppiside side */
-.container:nth-child(even) h4 {
-  position: absolute;
-  left: -170px;
-  top: 10px;
-  width: 100px;
-  text-align: right;
-}
-
-.container:nth-child(odd) h4 {
-  position: absolute;
-  left: 470px;
-  top: 10px;
-  width: 100px;
-  text-align: left;
-}
-
-.content>p {
+/* .content>p {
   margin: 5px;
-}
+} */
 
 /* content container */
 .container {
