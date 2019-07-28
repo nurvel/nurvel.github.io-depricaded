@@ -10,7 +10,8 @@
             grid-template-areas:
                 "header header header header"
                 "main main main main"
-                "section section section section"
+                "mystory mystory mystory mystory"
+                "whatido whatido whatido whatido"
                 "footer footer footer footer";
         }
 
@@ -104,11 +105,19 @@
             width: 100%; */
         }
 
-        section {
-            grid-area: section;
+        section#mystory {
+            grid-area: mystory;
             padding-top: 50px;
             padding-bottom: 50px;
+            /* background-color: #FFFFFF; */
         }
+
+        section#whatido{
+            grid-area: whatido;
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        } 
 
         footer {
             grid-area: footer;
@@ -116,7 +125,10 @@
             background-color: #222222;
             height: 60px;
             padding: 25px;
+        }
+        footer p{
             font-size: 12px;
+            margin: 0px;
         }
 
 
@@ -139,7 +151,17 @@
             position: absolute;
         }
 
+        .contanct-box {
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+        }
         .box {
+            margin: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .box-whatido {
             margin: 40px;
             display: flex;
             justify-content: center;
@@ -148,6 +170,9 @@
         .box-small {
             padding: 10px;
             flex-direction: row;
+        }
+        .box-small h3{
+            margin: 5px;
         }
 
         #introduction {
