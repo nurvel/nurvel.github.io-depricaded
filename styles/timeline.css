@@ -209,7 +209,7 @@
 
 .container:nth-child(even)::before,
 .container:nth-child(odd)::before {
-  left: 5%;
+  left: 7%;
 }
 
 
