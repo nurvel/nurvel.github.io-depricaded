@@ -47,6 +47,10 @@
 
         h2 {
             font-size: 30px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 24px;
         }
 
         /* mobile */
@@ -102,6 +106,7 @@
             grid-area: main;
             position: relative;
             padding-top: 75px;
+            padding-bottom: 50px;
             /* text-align: center;
             width: 100%; */
         }
@@ -118,6 +123,7 @@
             position: relative;
             padding-top: 10px;
             padding-bottom: 10px;
+            background-color: #ececec;
         } 
 
         footer {
@@ -126,7 +132,7 @@
             background-color: #222222;
             height: 60px;
             padding: 25px;
-            margin: 50px;
+            margin-top: 50px;
         }
         footer p{
             font-size: 12px;
@@ -164,8 +170,8 @@
             justify-content: center;
         }
         .box-whatido {
-            margin-top: 20px;
-            margin: 40px;
+            margin-top: 50px;
+            margin-bottom: 50px;
             display: flex;
             justify-content: center;
         }
