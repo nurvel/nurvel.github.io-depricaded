@@ -32,6 +32,27 @@
   margin: 2px;
 }
 
+/* years to oppiside side */
+.container:nth-child(even) h4 {
+  position: absolute;
+  left: -170px;
+  top: 10px;
+  width: 100px;
+  text-align: right;
+}
+
+.container:nth-child(odd) h4 {
+  position: absolute;
+  left: 470px;
+  top: 10px;
+  width: 100px;
+  text-align: left;
+}
+
+.content>p {
+  margin: 5px;
+}
+
 /* content container */
 .container {
   padding: 0px 40px;
