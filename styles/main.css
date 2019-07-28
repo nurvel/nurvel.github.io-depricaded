@@ -10,8 +10,8 @@
             grid-template-areas:
                 "header header header header"
                 "main main main main"
-                "mystory mystory mystory mystory"
                 "whatido whatido whatido whatido"
+                "mystory mystory mystory mystory"
                 "footer footer footer footer";
         }
 
@@ -95,6 +95,7 @@
                 -webkit-filter: grayscale(10%);
                 filter: grayscale(10%);
             }
+
         }
 
         main {
@@ -107,16 +108,16 @@
 
         section#mystory {
             grid-area: mystory;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             /* background-color: #FFFFFF; */
         }
 
         section#whatido{
             grid-area: whatido;
             position: relative;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         } 
 
         footer {
@@ -125,6 +126,7 @@
             background-color: #222222;
             height: 60px;
             padding: 25px;
+            margin: 50px;
         }
         footer p{
             font-size: 12px;
@@ -162,6 +164,7 @@
             justify-content: center;
         }
         .box-whatido {
+            margin-top: 20px;
             margin: 40px;
             display: flex;
             justify-content: center;
@@ -171,7 +174,24 @@
             padding: 10px;
             flex-direction: row;
         }
-        .box-small h3{
+
+        .box-small-whatido {
+            /* margin-left: 25px;
+            margin-right: 25px; */
+            flex-direction: row;
+            width:50vw;
+        }
+
+        @media screen and (min-width: 760px) {
+            .box-small-whatido {
+                /* margin-left: 25px;
+                margin-right: 25px; */
+                flex-direction: row;
+                width: 300px;
+            }    
+        }
+
+        .box-small-whatido h3{
             margin: 5px;
         }
 
@@ -182,4 +202,15 @@
 
         /* .timeline {
             padding: 50px;
+        } */
+
+
+        /* #whatido::after{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background: #c90c0c;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
         } */
