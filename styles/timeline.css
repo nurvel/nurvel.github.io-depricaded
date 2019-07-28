@@ -177,8 +177,8 @@
   
   .container:first-child, .container:last-child{
     left: -60px !important;
-	text-align: left;
-	z-index: 1;
+    text-align: left;
+    z-index: 1;
   }
   
   /* Full-width containers */
@@ -204,13 +204,14 @@
   width: 40%;
   position: absolute;
   top: 20px;
-  left: 5%;
+  left: 0%;
 }
 
 .container:nth-child(even)::before,
 .container:nth-child(odd)::before {
   left: 5%;
 }
+
 
 
 }
