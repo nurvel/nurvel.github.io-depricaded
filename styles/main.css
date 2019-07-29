@@ -12,6 +12,7 @@
                 "main main main main"
                 "whatido whatido whatido whatido"
                 "mystory mystory mystory mystory"
+                "bottom-contact bottom-contact bottom-contact bottom-contact"
                 "footer footer footer footer";
         }
 
@@ -100,6 +101,11 @@
                 filter: grayscale(10%);
             }
 
+            #introduction {
+                max-width: 500px;
+                display: inline-block; 
+            }
+
         }
 
         main {
@@ -114,7 +120,7 @@
         section#mystory {
             grid-area: mystory;
             padding-top: 10px;
-            padding-bottom: 10px;
+            padding-bottom: 50px;
             /* background-color: #FFFFFF; */
         }
 
@@ -124,6 +130,14 @@
             padding-top: 10px;
             padding-bottom: 10px;
             background-color: #ececec;
+        }
+
+        section#bottom-contact{
+            grid-area: bottom-contact;
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #ececec;
         } 
 
         footer {
@@ -132,13 +146,13 @@
             background-color: #222222;
             height: 60px;
             padding: 25px;
-            margin-top: 50px;
+            /* margin-top: 50px; */
         }
+
         footer p{
             font-size: 12px;
             margin: 0px;
         }
-
 
         .content-overflow {
             left: 50%;
@@ -194,17 +208,23 @@
                 margin-right: 25px; */
                 flex-direction: row;
                 width: 300px;
-            }    
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+
+            #introduction {
+                max-width: 80vw;
+                display: inline-block; 
+            }
+
         }
 
         .box-small-whatido h3{
             margin: 5px;
         }
 
-        #introduction {
-            max-width: 400px;
-            display: inline-block; 
-        }
+
 
         /* .timeline {
             padding: 50px;
