@@ -187,7 +187,7 @@
             justify-content: center;
         }
         .box-whatido {
-            margin-top: 50px;
+            margin-top: 0px;
             margin-bottom: 50px;
             display: flex;
             justify-content: center;
@@ -244,3 +244,23 @@
             border-radius: 50%;
         } */
 
+
+        table {
+            margin-top: 0px;
+            margin: 5px;
+        }
+
+        table, th, td {
+            border: 0px solid black;
+            border-collapse: collapse;
+          }
+          th, td {
+            padding: 5px;
+            padding-right: 10px;
+            text-align: left;
+              vertical-align: text-top;
+
+          }
+          td:first-child {  
+            font-weight: bold;
+          }
