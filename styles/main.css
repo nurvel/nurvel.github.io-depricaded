@@ -62,7 +62,7 @@
                 grid-area: header;
                 height: 300px;
                 position: absolute;
-                background-image: url('../images/bulb-small.jpg');
+                background-image: url('../images/beach-large.jpg');
 
                 width: 100%;
                 left: 0;
@@ -84,8 +84,10 @@
                 background-size: cover;
 
 
+                /*
                 -webkit-filter: grayscale(10%);
                 filter: grayscale(10%);
+                */
             }
        
         /* desktop */
@@ -95,13 +97,15 @@
                 height: 500px;
                 position: absolute;
 
-                background-image: url('../images/bulb-large.jpg');
+                background-image: url('../images/beach-large.jpg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover; 
 
+                /*
                 -webkit-filter: grayscale(10%);
                 filter: grayscale(10%);
+                */
             }
 
             #introduction {
@@ -247,6 +251,7 @@
 
         table {
             margin-top: 0px;
+            margin-left: 20px;
             margin: 5px;
         }
 
